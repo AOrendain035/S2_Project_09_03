@@ -47,7 +47,6 @@ select {
     margin: 2px 0px;
 }
 
-/* Placeholder Styles */
 div.slider input[type=range] {
     width: 60%;
 }
@@ -70,3 +69,5 @@ textarea {
     height: 200px;
     margin-bottom: 15px;
 }
+
+/* Placeholder Styles */
