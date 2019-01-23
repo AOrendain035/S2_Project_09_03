@@ -71,13 +71,15 @@
 
     <section>
         <h1>CSS Demo</h1>
+        <!-- Below, I have created a form where users will interact with the different selection lists, input fields, et cetera in order for them to test out how CSS affects something. -->
         <form>
+            <!-- First, I input a text area box; this will be where users insert their initial text before adding the different effects to it. -->
             <textarea name="sampleText" id="sampleBox" cols="30" rows="10" placeholder="Enter sample text and press the Tab key."
                 tabindex="1" wrap="hard" autofocus></textarea>
-
+            <!-- For the paragraph tag below, I just input a set of instructions for the user to follow in order for them to get their desired effect. -->
             <p>Select the CSS style values from the form below and preview the effect on the sample text in the
                 preview box.</p>
-
+            <!-- In the block of code underneath (from <legend>Fonts</legend> to the first </select>), I created a select list for the user to pick their desired font. A select list is a list in which the user can pick one of the options listed. I seperated the fonts into two seperate categories, specific and generic. -->
             <fieldset>
                 <legend>Fonts</legend>
                 <label for="fontfamily">Font Family</label>
@@ -103,6 +105,7 @@
                     </optgroup>
                 </select>
 
+                <!-- From <label> to </select>), I created another selection list; this time with a label titled font style. The options were normal, italic, and oblique. Both italic and oblique are very similar font styles. -->
                 <label for="fontstyle">Font Style</label>
                 <select name="fontstyle" id="fontstyle">
                     <option value="normal">normal</option>
@@ -110,12 +113,14 @@
                     <option value="oblique">oblique</option>
                 </select>
 
+                <!-- Underneath (from <label> to </select>), I created a third selection list; titled font weight. The options were normal and bold. Bold meaning in a darker, thicker type.  -->
                 <label for="fontweight">Font Weight</label>
                 <select name="fontweight" id="fontweight">
                     <option value="normal">normal</option>
                     <option value="bold">bold</option>
                 </select>
 
+                <!-- From <label> to </select>, I created, yet another selection list; this time for text decoration. The options were none, line-through, overline, and underline. None doesn't add an effect to the text, line-through just adds a line that goes through the text, overline is the opposite of underline as it adds a line over the text, underline adds it below. -->
                 <label for="textdecoration">Text Decoration</label>
                 <select name="textdecoration" id="textdecoration">
                     <option value="none">none</option>
@@ -124,6 +129,7 @@
                     <option value="underline">underline</option>
                 </select>
 
+                <!-- Below, (from <label> to </select>), I created a fifth selection list; titled text transform. The options were none, capitalize, lowercase, and uppercase. None doesn't add an effect to the text, capitalize makes the first letter uppercase, lowercase makes all the letters lowercased, and uppercase makes all the letters uppercase.  -->
                 <label for="texttransform">Text Transform</label>
                 <select name="texttransform" id="texttransform">
                     <option value="none">none</option>
@@ -132,6 +138,7 @@
                     <option value="uppercase">uppercase</option>
                 </select>
 
+                <!-- From <label> to </select>, I created a 6th and final (at least for this fieldset) selection list; this time for font variant. The options were normal and small-caps. All small-caps does is capitalize the first letter and uppercase the following but make them a smaller text size than the first letter.-->
                 <label for="fontvariant">Font Variant</label>
                 <select name="fontvariant" id="fontvariant">
                     <option value="normal">normal</option>
