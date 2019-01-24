@@ -14,6 +14,7 @@
 */
 
 /* Field Set Styles */
+/* Below, I have created one for the fieldsets and another for the legends within the fieldsets. The first style gets rid of the border around the fieldsets; gives it a width of 60% of the form; and a margin of 10px on the top and bottom sides. The second style affects the legend within the fieldset and changes its background color to a pinkish hue; gives it a width of 100% of the fieldsets; and adds a 2px margin to the top and bottom sides. */
 fieldset {
     border: none;
     width: 60%;
@@ -26,6 +27,7 @@ fieldset legend {
     margin: 2px 0px;
 }
 
+/* Underneath, I created a style that will specificialy affect the divs with a class of slider. The styles float the divs to the left, give them a width of 60%, and give them a 2px margin on the top and bottom sides. */
 /* DIV Styles */
 div.slider {
     float: left;
@@ -33,6 +35,7 @@ div.slider {
     margin: 2px 0px;
 }
 
+/* Below, I have created 6 different style that will affect different components of the form. The first style changes the look of all label elements and makes it so that they float left when the left margin is cleared, displays them as blocks meaning that the label elements will be on their own line. I also gave them a width of 40% and a margin of 2px on the bottom and top sides.*/
 /* Control Styles */
 label {
     clear: left;
@@ -42,27 +45,32 @@ label {
     margin: 2px 0px;
 }
 
+/* Below, I added a style for the input elements and select elements that gives them a margin of 2px for the top and bottom sides. */
 input,
 select {
     margin: 2px 0px;
 }
 
+/* For the input elements with a type of range within div elements with the class of slider, I added a style that gives them a width of 60% */
 div.slider input[type=range] {
     width: 60%;
 }
 
+/* For select elements/selection lists, I displayed them as blocks meaning that they will be displayed on their own lines. I also floated them towards the left which will make them appear as being on the left side. I also gave them a width of 120px. */
 select {
     display: block;
     float: left;
     width: 120px;
 }
 
+/* For input elements with the type of color, I gave them the same styles as the previous element. */
 input[type=color] {
     display: block;
     float: left;
     width: 120px;
 }
 
+/* For textarea boxes, I added styles that will give the font within them a size of 1.2 em, which is a relative unit; and gave the text area box a width of 100%. I also gave it a height of 200px and its bottom margin a size of 15px.  */
 textarea {
     font-size: 1.5em;
     width: 100%;
@@ -70,4 +78,22 @@ textarea {
     margin-bottom: 15px;
 }
 
+/* Below, all three styles do the exact same thing its just they're made to work for all different web browsers. The styles give the textareas' placeholder text a background color that is creamish and a text color that is redish. The font size is also 1.5em.  */
 /* Placeholder Styles */
+textarea::-moz-placeholder {
+    background-color: rgb(255, 255, 191);
+    color: rgb(255, 151, 151);
+    font-size: 1.5em;
+}
+
+textarea:-ms-input-placeholder {
+    background-color: rgb(255, 255, 191);
+    color: rgb(255, 151, 151);
+    font-size: 1.5em;
+}
+
+textarea::-webkit-input-placeholder {
+    background-color: rgb(255, 255, 191);
+    color: rgb(255, 151, 151);
+    font-size: 1.5em;
+}

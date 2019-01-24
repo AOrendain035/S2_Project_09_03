@@ -155,7 +155,7 @@
                 <input type="color" name="backgroundcolor" id="backgroundcolor" value="#FFFFFF" placeholder="#rrggbb">
             </fieldset>
 
-            <!-- -->
+            <!-- From <legend> to </div>, I created a slider tool for the user to choose the desired font size that the inserted text will have. A slider tool is a type of input; it works by being "dragged" by the mouse from one side to another-->
             <fieldset>
                 <legend>Sizes</legend>
                 <label for="fontsize">Font Size (px)</label>
@@ -165,6 +165,7 @@
                     40
                 </div>
 
+                <!-- Below (from <label> to </div>), I created another slider tool; this time for the letter spacing. -->
                 <label for="letterspacing">Letter Spacing (px)</label>
                 <div class="slider">
                     0
@@ -172,6 +173,7 @@
                     10
                 </div>
 
+                <!-- From <label> to </div>, I added yet another slider tool, this specific slider affects the word spacing. -->
                 <label for="wordspacing">Word Spacing (px)</label>
                 <div class="slider">
                     0
@@ -179,6 +181,7 @@
                     10
                 </div>
 
+                <!-- From <label> to </div>, I again inserted another slider tool; this one will affect the line height and works with the ems. Ems are a relative unit of measurement. Meaning that elements that are sized with ems don't have a set size. -->
                 <label for="lineheight">Line Height (em)</label>
                 <div class="slider">
                     0
@@ -186,6 +189,7 @@
                     4
                 </div>
 
+                <!-- From <label> to </div>, I created a final slider tool; this slider will be used to increase the text indent of the inputed text. Meaning, this slider tool will affect the width of the space between the edge of the text box and the text itself. -->
                 <label for="textindent">Text Indent (px)</label>
                 <div class="slider">
                     0
